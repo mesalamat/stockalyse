@@ -1,7 +1,12 @@
 .App {
   text-align: center;
+  width: 100%; /* Ensure it spans the full width */
+  height: auto; /* Allow it to grow with content */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding/border in width/height */
+  flex-grow: 1;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,25 +19,100 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color: #fff; /* Adjusted to white for better readability */
+  width: 100%; /* Ensure the header spans the full width */
+  padding: 20px 0; /* Top and bottom padding */
+  background-color: #2196f3; /* Blue background */
   display: flex;
-  flex-direction: column;
+  max-height: 100px;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 28px;
+  border-bottom: 4px solid #1769aa; /* Optional: Bottom border for design */
+  box-sizing: border-box; /* Include padding in the width calculation */
 }
+
+.App-header form {
+  display: flex;
+  align-items: center; /* Aligns all elements vertically */
+  gap: 10px; /* Adds spacing between elements */
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.App-header form label {
+  text-align: center;
+}
+
+.App-header form input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.App-header form button {
+  padding: 8px 16px;
+  font-size: 16px;
+  color: white;
+  background-color: #1769aa;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.App-header h1{
+  text-align: center;
+  margin-right: 100px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #282c34; /* Matches your app's background */
+  color: white; /* Ensure text is visible */
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  text-align: center; /* Centers the text horizontally */
+  margin: 0 auto; /* Centers the element itself if it has a width */
+  font-size: 24px; /* Adjust font size as needed */
+  color: #ffffff; /* Optional: Ensure readability */
+  padding: 10px 0; /* Optional: Add some vertical spacing */
+}
+.daySelection {
+  text-align: center; /* Centers the text horizontally */
+  margin: 0 auto; /* Centers the element itself if it has a width */
+  font-size: 24px; /* Adjust font size as needed */
+  color: #ffffff; /* Optional: Ensure readability */
+  padding: 10px 0; /* Optional: Add some vertical spacing */
+}
+.daySelection label{
+  padding-right: 5px;
+}
+
+.stockCard {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Optional: Center content vertically */
+  width: 80%; /* Reduce the width to 80% of its parent container */
+  max-width: 600px; /* Optional: Set a maximum width */
+  padding: 20px; /* Add some padding for spacing */
+  border-radius: 8px; /* Optional: Rounded corners */
+  border-color: #f50057;
+  border-width: 5px;
+  border-style: solid;
+  box-shadow: 0 4px 6px #ab003c; /* Optional: Shadow for a polished look */
+  margin: 20px auto; /* Center it horizontally with some vertical spacing */
+}
+
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
