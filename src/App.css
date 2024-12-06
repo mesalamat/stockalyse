@@ -94,6 +94,14 @@ h2 {
 .daySelection label{
   padding-right: 5px;
 }
+.daySelection select{
+  border-style: solid;
+  border-width: 2px;
+  background-color: #f50057;
+  border-color: #ab003c;
+  border-radius: 8px;
+  color: white;
+}
 
 .stockCard {
   display: flex;
